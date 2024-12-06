@@ -7,6 +7,7 @@ import ProductPage from './ProductPage';
 import DashboardPage from './DashboardPage';
 import "../css/App.css";
 import Header from '../components/Header';
+import MainPage from './MainPage';
 const App: React.FC = () => {
   return (
     <Router>

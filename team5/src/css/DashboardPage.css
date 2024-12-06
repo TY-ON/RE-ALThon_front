@@ -15,13 +15,13 @@
   align-items: flex-start; /* 좌측 정렬 */
 }
 .application-container {
-  width: 35%; /* 사이드바 너비 */
+  width: 42%; /* 사이드바 너비 */
   background-color: #E0EACC; /* 배경색 */
 
 }
 .bages-container {
-  width: 35%; /* 사이드바 너비 */
-  background-color: #E0EA3C; /* 배경색 */
+  width: 43%; /* 사이드바 너비 */
+  background-color: #E0EACC; /* 배경색 */
 }
 
 /* 메뉴 리스트 스타일링 */
@@ -50,13 +50,30 @@
   color: #007bff; /* 마우스 hover 시 텍스트 색 변경 */
 }
 
-/* 콘텐츠 영역 스타일링 */
-.content {
-  flex-grow: 1;
-  padding: 20px;
-}
 
 /* Profile.css */
+
+.nav-container {
+  display: flex;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #333;
+}
 
 .profile-container {
   font-family: 'Arial', sans-serif;
@@ -125,6 +142,12 @@
   justify-content: space-between;
   margin-top: 30px;
 }
+.img_box {
+  width: 50%;
+  height: 40%;
+}
+
+
 
 .profile-menu {
   background-color: white;
@@ -168,4 +191,129 @@
 .ad-banner p {
   font-size: 18px;
   color: #333;
+}
+
+/* BadgeSection.css */
+
+.badge-section {
+  display: flex;
+  background-color: #f8fbe9; /* 연한 녹색 배경 */
+  padding: 16px 24px; /* 내부 여백 */
+  border-radius: 12px; /* 둥근 모서리 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+}
+
+.badge-header {
+  flex-direction: column;
+  justify-content: space-between; /* 제목과 더보기를 양쪽으로 배치 */
+  align-items: center;
+  margin-bottom: 16px; /* 배지 리스트와의 간격 */
+}
+
+.badge-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0; /* 기본 마진 제거 */
+  color: #333; /* 텍스트 색상 */
+}
+
+.more-link {
+  font-size: 14px;
+  color: #666; /* 링크 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  display: inline-block;
+}
+
+.more-link:hover {
+  color: #333; /* 호버 시 색상 변경 */
+}
+
+.badge-list {
+  display: flex;
+  justify-content: flex-start; /* 배지들을 왼쪽 정렬 */
+  gap: 24px; /* 배지들 간의 간격 */
+}
+
+.badge-icon {
+  width: 64px; /* 배지 아이콘 크기 */
+  height: 64px; /* 정사각형 크기 */
+  object-fit: cover; /* 이미지 비율 유지 */
+  border-radius: 50%; /* 둥근 이미지 처리 */
+  border: 2px solid #ddd; /* 약간의 테두리 */
+}
+
+/* QuestList.css */
+
+.quest-list {
+  background-color: #f8fbe9; /* 연한 녹색 배경 */
+  border-radius: 12px; /* 둥근 모서리 */
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* 각 카드 간의 간격 */
+}
+
+.quest-card {
+  display: flex;
+  justify-content: space-between; /* 퀘스트 정보와 진행 상태를 양쪽 정렬 */
+  align-items: center;
+  background-color: #fff; /* 카드 배경색 */
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5; /* 테두리 */
+}
+
+.quest-info {
+  display: flex;
+  align-items: center; /* 아이콘과 텍스트를 세로로 정렬 */
+  gap: 12px; /* 아이콘과 텍스트 간의 간격 */
+}
+
+.quest-icon {
+  width: 20%; /* 아이콘 크기 */
+  height: 20%;
+  object-fit: cover; /* 이미지 비율 유지 */
+  border-radius: 50%; /* 아이콘 둥글게 */
+  background-color: #eaf4e4; /* 아이콘 배경색 */
+  padding: 8px;
+}
+
+.quest-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #666; /* 제목 색상 */
+}
+
+.quest-description {
+  font-size: 16px;
+  margin: 4px 0 0 0; /* 제목과 간격 */
+  color: #333; /* 설명 색상 */
+}
+
+.quest-progress {
+  font-size: 14px;
+  display: flex;
+  align-items: center; /* 진행 상태와 버튼 정렬 */
+}
+
+.progress-button {
+  background-color: #87b45d; /* 초록색 버튼 */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.progress-button:hover {
+  background-color: #6a914a; /* 호버 색상 */
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
 }

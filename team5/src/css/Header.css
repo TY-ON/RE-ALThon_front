@@ -1,0 +1,35 @@
+ .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eef3e4;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px; /* 메뉴 항목 간 거리 */
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .nav-logo {
+        margin-right: 15px; /* 로고와 메뉴 간 거리 */
+    }
+
+    .logoimage {
+        height: 50px;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+        color: #678c44; /* 호버 시 색상 */
+    }
