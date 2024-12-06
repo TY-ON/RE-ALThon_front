@@ -1,0 +1,171 @@
+/* MyPage.css */
+
+.my-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* 사이드바 스타일링 */
+.sidebar {
+  width: 15%; /* 사이드바 너비 */
+  background-color: #FFFFFF; /* 배경색 */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column; /* 항목들을 세로로 나열 */
+  align-items: flex-start; /* 좌측 정렬 */
+}
+.application-container {
+  width: 35%; /* 사이드바 너비 */
+  background-color: #E0EACC; /* 배경색 */
+
+}
+.bages-container {
+  width: 35%; /* 사이드바 너비 */
+  background-color: #E0EA3C; /* 배경색 */
+}
+
+/* 메뉴 리스트 스타일링 */
+.menu {
+  list-style-type: none; /* 기본 리스트 스타일 제거 */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* 각 메뉴 항목 스타일링 */
+.menu li {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left; /* 텍스트 좌측 정렬 */
+}
+
+.menu li a {
+  text-decoration: none; /* 링크 기본 스타일 제거 */
+  color: #333; /* 텍스트 색 */
+  font-size: 18px;
+}
+
+.menu li a:hover {
+  background-color: #ddd; /* 마우스 hover 시 배경색 변경 */
+  color: #007bff; /* 마우스 hover 시 텍스트 색 변경 */
+}
+
+/* 콘텐츠 영역 스타일링 */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Profile.css */
+
+.profile-container {
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.profile-info .level {
+  font-size: 18px;
+  color: #888;
+}
+
+.profile-stats {
+  display: flex;
+  align-items: center;
+}
+.profile-stats p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.profile-actions .edit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.profile-actions .edit-button:hover {
+  background-color: #45a049;
+}
+
+.profile-details {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.profile-menu {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin-right: 10px;
+  display: flex;
+
+}
+
+.profile-menu p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.campaign-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 2;
+}
+
+.campaign-info input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.ad-banner {
+  background-color: #d8f4d1;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.ad-banner p {
+  font-size: 18px;
+  color: #333;
+}

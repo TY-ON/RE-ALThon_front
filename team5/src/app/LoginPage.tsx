@@ -25,8 +25,10 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className="login-container">
-    <img src={logo}/>
-      <h2>ONU</h2>
+    <div className="logo-container">
+      <img src={logo.src} className="logo_img"/>
+        <h2>ONU</h2>
+    </div>
       <h3>당신과 지속가능한 우리</h3>
       <form onSubmit={handleSubmit} className="login-form">
         <div className="form-group">

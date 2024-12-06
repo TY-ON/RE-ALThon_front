@@ -8,7 +8,15 @@
     background-color: #f4f4f9;
     font-family: Arial, sans-serif;
   }
-  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .logo_img {
+width: 115px;
+height: 115px;
+object-fit: cover;
+  }
   /* 로그인 폼 스타일 */
   .login-form {
     display: flex;
