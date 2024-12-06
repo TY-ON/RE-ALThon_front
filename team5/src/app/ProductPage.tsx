@@ -1,26 +1,36 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react'
 import '../css/ProductPage.css';
 import profile from '../png/profileimage.jpg';
 
-const Product: React.FC = () => {
+
+interface Props {
+  name: string
+  company: string
+  score: string
+  price: string
+  image: string
+}
+
+const Product: React.FC<Props> = ({ name, company, score, price, image }) => {
     return (
 <div className='products-item'>
     <div className='products-image'>
-        <img src={profile.src} alt="로딩중입니다." />
+        <img src={image} alt="로딩중입니다." />
     </div>
     <div className='products-item-box'>
       <div className='padder'></div>
         <div className='description'>
         <div className='company-name'>
-            test
+          {company}
         </div>
         <div className='product-name'>
-            test
+          {name}
         </div>
         <div className='product-wrapper'>
-        <div className='product-score'>🌿3.5</div>
-        <div className='product-price'>7000원</div>
+        <div className='product-score'>🌿{score}</div>
+        <div className='product-price'>{price}</div>
         </div>
         </div>
       </div>
@@ -29,7 +39,20 @@ const Product: React.FC = () => {
 }
 
 const ProductPage: React.FC = () => {
-  const { username } = useParams<{ username: string }>();
+  const [data, setData] = useState<Record<string, string[]>>({})
+
+    useEffect(()=> {
+      fetch('http://localhost:5000/product/list', {    
+        method: 'POST',
+      })
+      .then(response => response.json())
+      .then(res => { 
+        console.log(res);
+        setData(res);
+      });
+    }, []);
+
+  // const data: Record<string, string[]> = {"1":["0", "1", "2", "3"]}
 
   return (
     <div className="my-page">
@@ -44,14 +67,14 @@ const ProductPage: React.FC = () => {
       <div className='product-container'>
         <h2>BEST ITEM</h2>
         <div className='products-grid'>
-          <Product/>
-          <Product/>
-          <Product/>
-          <Product/>
-          <Product/>
-          <Product/>
-          <Product/>
-          <Product/>
+        {Object.keys(data).map((keys, index) => 
+        <Product key={index}
+          name={keys}
+          company={data[keys][0]}
+          score={data[keys][1]}
+          price={data[keys][2]}
+          image={data[keys][3]}
+        />)}
         </div>
       </div>
     </div>

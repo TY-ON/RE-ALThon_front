@@ -89,7 +89,7 @@
   .products-item:after {
     content: "";
     display: block;
-    padding-bottom: 130%;
+    padding-bottom: 150%;
   }
 
   .products-image {
