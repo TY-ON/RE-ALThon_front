@@ -3,11 +3,13 @@
 .my-page {
   display: flex;
   height: 100vh;
+  background-color: #E0EACC;
 }
 
 /* 사이드바 스타일링 */
 .sidebar {
   width: 15%; /* 사이드바 너비 */
+  height: 100%;
   background-color: #FFFFFF; /* 배경색 */
   padding-top: 20px;
   display: flex;

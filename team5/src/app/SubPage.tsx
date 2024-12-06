@@ -1,15 +1,14 @@
 import React from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
-import '../css/ProductPage.css';
+import { useParams, Link } from 'react-router-dom';
+import '../css/SubPage.css';
 import profile from '../png/profileimage.jpg';
-
+import eyecream from '../png/eyecream.png';
+import next_eyecream from '../png/next_eyecream.png';
 const Product: React.FC = () => {
-
     return (
 <div className='products-item'>
     <div className='products-image'>
-        <img src={profile.src} alt="로딩중입니다." 
-        />
+        <img src={profile.src} alt="로딩중입니다." />
     </div>
     <div className='products-item-box'>
       <div className='padder'></div>
@@ -30,7 +29,7 @@ const Product: React.FC = () => {
     );
 }
 
-const ProductPage: React.FC = () => {
+const SubPage: React.FC = () => {
   const { username } = useParams<{ username: string }>();
 
   return (
@@ -43,21 +42,17 @@ const ProductPage: React.FC = () => {
           <li><Link to="/dashboard/delivery">Hair</Link></li>
         </ul>
       </div>
-      <div className='product-container'>
-        <h2>BEST ITEM</h2>
-        <div className='products-grid'>
-        <li><Link to="/subpage/:productName"><Product/></Link></li>
-        <li><Link to="subpage/:productName"><Product/></Link></li>
-        <li><Link to="/dashboard/delivery"><Product/></Link></li>
-        <li><Link to="/dashboard/delivery"><Product/></Link></li>
-        <li><Link to="/dashboard/delivery"><Product/></Link></li>
-        <li><Link to="/dashboard/delivery"><Product/></Link></li>
-        <li><Link to="/dashboard/delivery"><Product/></Link></li>
-        <li><Link to="/dashboard/delivery"><Product/></Link></li>
+        <div className='itemtitle3'>BEST ITEM</div>
+        <div className='itembox'>
+            <div>
+                <img src={eyecream.src} className='itemimg'/>
+            </div>
+            <div>
+                <img src={next_eyecream.src} className='itemimg'/>
+            </div>
         </div>
       </div>
-    </div>
   );
 };
 
-export default ProductPage;
+export default SubPage;
