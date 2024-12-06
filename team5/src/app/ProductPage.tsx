@@ -3,11 +3,19 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import '../css/ProductPage.css';
 import profile from '../png/profileimage.jpg';
 
-const Product: React.FC = () => {
+interface Props{
+  name: String
+  company: String
+  score: String
+  price: String
+  image: String
+}
+
+const Product: React.FC<Props> = ({name, company, score, price, image}) => {
     return (
 <div className='products-item'>
     <div className='products-image'>
-        <img src={profile.src} alt="로딩중입니다." />
+        <img src={image} alt="로딩중입니다." />
     </div>
     <div className='products-item-box'>
       <div className='padder'></div>
