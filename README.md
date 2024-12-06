@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# README
 
-## Getting Started
+# OnU: 건강과 지속 가능한 소비를 위한 플랫폼
 
-First, run the development server:
+OnU는 **"모두의 건강과 웰빙"**과 **"책임감 있는 소비와 생산"**이라는 SDGs 목표를 중심으로 건강과 환경을 동시에 고려한 지속 가능한 라이프스타일을 제공합니다. 천연 성분 기반 헬스 케어 제품과 공정 소비를 위한 혁신적인 서비스로 더 나은 미래를 만들어 나가는 것을 목표로 하고 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌱 **주요 목표**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **건강과 웰빙 (SDGs 목표 3번)**
+    - 건강은 모든 사람들이 누려야 할 기본적인 권리입니다.
+    - AI 맞춤형 솔루션과 천연 성분 제품으로 개인의 건강 증진과 웰빙을 지원합니다.
+2. **책임감 있는 소비와 생산 (SDGs 목표 12번)**
+    - 친환경 소재와 공정 소비를 기반으로 지속 가능한 소비 문화를 조성합니다.
+    - Web3 리워드 시스템으로 소비자 참여를 유도하며, 구매가 사회적 가치를 창출하도록 설계합니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌟 **서비스 주요 기능**
 
-To learn more about Next.js, take a look at the following resources:
+1. **AI 맞춤형 건강 솔루션**
+    - 개인의 건강 상태를 분석하고 적합한 제품을 추천합니다.
+    - 천연 재료의 최적 조합을 분석하여 나만의 맞춤 제품을 제공합니다.
+2. **Web3 기반 리워드 시스템**
+    - 공정 소비에 참여하면 포인트를 적립하며, 커뮤니티 활동으로 추가 리워드를 제공합니다.
+    - 포인트는 제품 구매와 커뮤니티 내에서 사용할 수 있습니다.
+3. **건강 및 지속 가능성을 강조한 제품**
+    - 리필 가능한 화장품, 비건 제품, 천연 헬스 케어 상품 등 친환경 제품을 제공합니다.
+    - 헬스 어드벤트 캘린더와 여행용 건강 키트 등 실용적인 솔루션을 제공합니다.
+4. **소비자 참여와 공정성 평가**
+    - 고객 리뷰 시스템에 "공정 소비 영향력" 배지를 도입해 참여를 장려합니다.
+    - 전문가 및 헬스 케어 인플루언서의 의견과 추천 콘텐츠를 제공합니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔗 **사용 방법**
 
-## Deploy on Vercel
+1. **OnU 플랫폼에 가입**
+    - 회원 가입 후 건강 상태와 소비 성향을 입력합니다.
+2. **AI 추천 제품 확인**
+    - AI가 분석한 맞춤형 제품 리스트를 확인하고 구매합니다.
+3. **리워드 참여**
+    - 공정 소비 제품 구매와 커뮤니티 활동을 통해 포인트를 적립합니다.
+4. **포인트 활용**
+    - 적립한 포인트로 제품 할인 및 커뮤니티 활동에 활용합니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📌 **비전과 목표**
+
+OnU는 개인의 건강과 웰빙을 증진하고, 지속 가능한 소비 문화를 확산시키는 것을 목표로 합니다. 친환경적인 생산과 소비를 통해 모두가 더 나은 미래를 누릴 수 있도록 기여하겠습니다.
+
+---
+
+## 💫 팀 소개 : SHiNE
+
+**Shine**은 **"반짝반짝 빛나는 아이디어로 세상을 밝히다"**라는 신념을 가진 팀입니다.
+
+Shine은 건강한 삶과 책임 있는 소비 문화를 확산시키기 위해 천연 성분 제품, AI 기술, 그리고 공정 소비를 중심으로 한 서비스를 개발하며, 모두가 빛나는 미래를 만들어갈 수 있도록 노력합니다.
+
+**"함께 세상을 더 밝고 지속 가능한 곳으로!"** Shine의 여정에 동참해주세요. 🌟
+
+## 👥 팀원 소개
+
+김현경(팀장) : 디자인
+
+김은서 : FE
+
+김태영 : BE
+
+조아연 : AI
+
+고연오 : AI
