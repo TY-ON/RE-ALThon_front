@@ -1,0 +1,23 @@
+.itembox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+ 	
+.itemimg {
+    width: 30vw;
+    height: 30vw;
+    object-fit: cover;
+    margin: 0% 10%;
+    gap: 13vw;
+  }
+
+.itemtitle{
+    color: #85A44B;
+    font-size: 40px;
+    padding: 10px;
+}
+
+        

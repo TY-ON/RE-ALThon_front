@@ -14,7 +14,7 @@ function Dashboard_profile() {
           <span className="profile-subtitle">🌼 Clover</span>
         </div>
       </div>
-      <button className="edit-button" onClick={handleEditClick}>
+      <button className="edit-button" >
         수정하기
       </button>
     </div>
