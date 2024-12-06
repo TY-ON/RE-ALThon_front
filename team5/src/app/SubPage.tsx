@@ -42,7 +42,6 @@ const SubPage: React.FC = () => {
           <li><Link to="/dashboard/delivery">Hair</Link></li>
         </ul>
       </div>
-        <div className='itemtitle3'>BEST ITEM</div>
         <div className='itembox'>
             <div>
                 <img src={eyecream.src} className='itemimg'/>
